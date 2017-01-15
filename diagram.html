@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Years', 'Number'],
+          ['1950-1960',     2],
+          ['1960-1970',      0],
+          ['1970-1980',  4],
+          ['1980-1990', 1],
+          ['1990-2000',    8],
+          ['2000-2010',    4],
+          ['2010-2020',    1]
+        ]);
+
+        var options = {
+          
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Top 20</a></li>
+        <li><a href="diagram.html">Diagram</a></li>
+        <li><a href="liked.html">Liked</a></li>
+      </ul>
+    </div>
+    <div class="header">Diagram</div>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
