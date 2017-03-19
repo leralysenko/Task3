@@ -1,72 +1,102 @@
-var d = document,
-    itemBox = d.querySelectorAll('.item_box'), // блок каждого товара
-    cartCont = d.getElementById('cart_content'); // блок вывода данных корзины
-// Функция кроссбраузерной установка обработчика событий
-function addEvent(elem, type, handler){
-  if(elem.addEventListener){
-    elem.addEventListener(type, handler, false);
-  } else {
-    elem.attachEvent('on'+type, function(){ handler.call( elem ); });
-  }
-  return false;
-}
-// Получаем данные из LocalStorage
-function getCartData(){
-  return JSON.parse(localStorage.getItem('cart'));
-}
-// Записываем данные в LocalStorage
-function setCartData(o){
-  localStorage.setItem('cart', JSON.stringify(o));
-  return false;
-}
-// Добавляем товар в корзину
-function addToCart(e){
-  this.disabled = true; // блокируем кнопку на время операции с корзиной
-  var cartData = getCartData() || {}, // получаем данные корзины или создаём новый объект, если данных еще нет
-      parentBox = this.parentNode, // родительский элемент кнопки "Добавить в корзину"
-      itemId = this.getAttribute('data-id'), // ID фильма 
-      itemName = parentBox.querySelector('.item_name').innerHTML,
-      itemYear = parentBox.querySelector('.item_year').innerHTML,
-      itemRating = parentBox.querySelector('.item_rating').innerHTML,
-      itemGenre = parentBox.querySelector('.item_genre').innerHTML,
-      itemCountry = parentBox.querySelector('.item_country').innerHTML,
-      itemDir = parentBox.querySelector('.item_dir').innerHTML; 
-
-  if(!setCartData(cartData)){ // Обновляем данные в LocalStorage
-    this.disabled = false; // разблокируем кнопку после обновления LS
-  }
- return false;
-}
-// Устанавливаем обработчик события на каждую кнопку "Добавить в корзину"
-for(var i = 0; i < itemBox.length; i++){
-  addEvent(itemBox[i].querySelector('.add_item'), 'click', addToCart);
-}
-// Открываем корзину со списком добавленных товаров
-function openCart(e){
-  var cartData = getCartData(), // вытаскиваем все данные корзины
-      totalItems = '';
-  // если что-то в корзине уже есть, начинаем формировать данные для вывода
-  if(cartData !== null){
-    totalItems = '<table class="tab"><tr><th>Name</th><th>Year</th><th>Rating</th><th>Genre</th><th>Country</th><th>Director</th></tr>';
-    for(var items in cartData){
-      totalItems += '<tr>';
-      for(var i = 0; i < cartData[items].length; i++){
-        totalItems += '<td>' + cartData[items][i] + '</td>';
-      }
-      totalItems += '</tr>';
-    }
-    totalItems += '</table>';
-    cartCont.innerHTML = totalItems;
-  } else {
-    // если в корзине пусто, то сигнализируем об этом
-    cartCont.innerHTML = 'Пусто!';
-  }
-  return false;
-}
-/* Открыть корзину */
-addEvent(d.getElementById('checkout'), 'click', openCart);
-/* Очистить корзину */
-addEvent(d.getElementById('clear_cart'), 'click', function(e){
-  localStorage.removeItem('cart');
-  cartCont.innerHTML = 'Данные очишены.';
-});
+jQuery(document).ready(function ($) {
+                $('.button1').on('click', function () {
+                    $.showYtVideo({
+                        videoId: '87Pxs5MSr_c'
+                    });
+                });
+                $('.button2').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'x1_HdUQ1Mz0'
+                    });
+                });
+                $('.button3').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'kryutKVnaGQ'
+                    });
+                });
+                $('.button4').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'fmBt4PXWzpM'
+                    });
+                });
+                $('.button5').on('click', function () {
+                    $.showYtVideo({
+                        videoId: '41081TXzuY0'
+                    });
+                });
+                $('.button6').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'jW0a8P-uNek'
+                    });
+                });
+                $('.button7').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'mq9d2S4iJS0'
+                    });
+                });
+                $('.button8').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'QVIt5n94LL0'
+                    });
+                });
+                $('.button9').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'AmIQ--cjntw'
+                    });
+                });
+                $('.button10').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'oqHJp_ZZdU4'
+                    });
+                });
+                $('.button11').on('click', function () {
+                    $.showYtVideo({
+                        videoId: '4BE5u9itrsY'
+                    });
+                });
+                $('.button12').on('click', function () {
+                    $.showYtVideo({
+                        videoId: '1bw8KFlEWpU'
+                    });
+                });
+                $('.button13').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'gB7wy6YGCGA'
+                    });
+                });
+                $('.button14').on('click', function () {
+                    $.showYtVideo({
+                        videoId: '85Zz1CCXyDI'
+                    });
+                });
+                $('.button15').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'HceZj-mOrMo'
+                    });
+                });
+                $('.button16').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'yMnXpoudToM'
+                    });
+                });
+                $('.button17').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'hA0Ht8S1KaU'
+                    });
+                });
+                $('.button18').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'ihTvN2iCnhA'
+                    });
+                });
+                $('.button19').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'PhSSUu9KnQo'
+                    });
+                });
+                $('.button20').on('click', function () {
+                    $.showYtVideo({
+                        videoId: 'GBZK3fLZC4Q'
+                    });
+                });
+            });

@@ -1,9 +1,4 @@
-/**
- * @name jQuery showPopup plugin
- * @author Vlad Kozelsky
- * @description Show modal window
- * @version 1.0
- */
+
 
 (function($) {
     $.showYtVideo = function(options) {

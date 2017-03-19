@@ -6,17 +6,7 @@
 	<link href="showYtVideo.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-		<div class="jquery-script-ads" style="margin:0px auto;"><script type="text/javascript"><!--
-		google_ad_client = "ca-pub-2783044520727903";
-		/* jQuery_demo */
-		google_ad_slot = "2780937993";
-		google_ad_width = 728;
-		google_ad_height = 90;
-		//-->
-		</script>
-		<script type="text/javascript"
-		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-		</script></div>
+		
 		<div class="nav">
 			<ul>
 				<li><a href="index.html">Top 20</a></li>
@@ -38,349 +28,232 @@
 					<th></th>
 					<th></th>
 				</tr>
-				<tr class="even item_box">
-					<td class="item_img"><img src="./img/img1.jpg"></td>
-					<td class="item_name">Побег из Шоушенка</td>
-					<td class="item_year">1994</td>
-					<td class="item_rating">9,3</td>
-					<td class="item_genre">Драма</td>
-					<td class="item_country">США</td>
-					<td class="item_dir"><a href="http://www.imdb.com/name/nm0001104/?ref_=tt_ov_dr">Frank Darabont</a></td>
+				<tr class="even">
+					<td id="urlPoster0"></td>
+					<td id="title0"></td>
+					<td id="year0"></td>
+					<td id="rating0"></td>
+					<td id="genres0"></td>
+					<td id="countries0"></td>
+					<td id="directors0"></td>
 					<td class="item_tr"><a href="#" class="button1"/>Трейлер</a></td>
-					<td class="add_item" data-id="1"><a href="#" class="button21"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(0)" class="button21"/>Избранное</a></td>
 				</tr>
-				<tr class="item_box">
-					<td class="item_img"><img src="./img/img2.jpg"></td>
-					<td class="item_name">Крестный отец</td>
-					<td class="item_year">1973</td>
-					<td class="item_rating">9,2</td>
-					<td class="item_genre">Драма</td>
-					<td class="item_country">США</td>
-					<td class="item_dir"><a href="http://www.imdb.com/name/nm0000338/?ref_=tt_ov_dr">Francis Ford Coppola</a></td>
+				<tr>
+					<td id="urlPoster1"></td>
+					<td id="title1"></td>
+					<td id="year1"></td>
+					<td id="rating1"></td>
+					<td id="genres1"></td>
+					<td id="countries1"></td>
+					<td id="directors1"></td>
 					<td class="item_tr"><a href="#" class="button2"/>Трейлер</a></td>
-					<td class="add_item" data-id="2"><a href="#" class="button22"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(1)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr class="even">
-					<td><img src="./img/img3.jpg"></td>
-					<td>Крестный отец2</td>
-					<td>1974</td>
-					<td>9,0</td>
-					<td>Драма</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0000338/?ref_=tt_ov_dr">Francis Ford Coppola</a></td>
+					<td id="urlPoster2"></td>
+					<td id="title2"></td>
+					<td id="year2"></td>
+					<td id="rating2"></td>
+					<td id="genres2"></td>
+					<td id="countries2"></td>
+					<td id="directors2"></td>
 					<td><a href="#" class="button3"/>Трейлер</a></td>
-					<td class="add_item" data-id="3"><a href="#" class="button23"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(2)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr >
-					<td><img src="./img/img4.jpg"></td>
-					<td>Темный рыцарь</td>
-					<td>2008</td>
-					<td>8,9</td>
-					<td>Драма</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0634240/?ref_=tt_ov_dr">Christopher Nolan</a></td>
+					<td id="urlPoster3"></td>
+					<td id="title3"></td>
+					<td id="year3"></td>
+					<td id="rating3"></td>
+					<td id="genres3"></td>
+					<td id="countries3"></td>
+					<td id="directors3"></td>
 					<td><a href="#" class="button4"/>Трейлер</a></td>
-					<td class="add_item" data-id="4"><a href="#" class="button24"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(3)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr class="even">
-					<td><img src="./img/img5.jpg"></td>
-					<td>12 разгневаных мужчин</td>
-					<td>1957</td>
-					<td>8,9</td>
-					<td>Драма</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0001486/?ref_=tt_ov_dr">Sidney Lumet</a></td>
+					<td id="urlPoster4"></td>
+					<td id="title4"></td>
+					<td id="year4"></td>
+					<td id="rating4"></td>
+					<td id="genres4"></td>
+					<td id="countries4"></td>
+					<td id="directors4"></td>
 					<td><a href="#" class="button5"/>Трейлер</a></td>
-					<td class="add_item" data-id="5"><a href="#" class="button25"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(4)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr >
-					<td><img src="./img/img6.jpg"></td>
-					<td>Список Шиндлера</td>
-					<td>1993</td>
-					<td>8,9</td>
-					<td>Исторический</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0000229/?ref_=tt_ov_dr">Steven Spielberg</a></td>
+					<td id="urlPoster5"></td>
+					<td id="title5"></td>
+					<td id="year5"></td>
+					<td id="rating5"></td>
+					<td id="genres5"></td>
+					<td id="countries5"></td>
+					<td id="directors5"></td>
 					<td><a href="#" class="button6"/>Трейлер</a></td>
-					<td class="add_item" data-id="6"><a href="#" class="button26"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(5)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr class="even">
-					<td><img src="./img/img7.jpg"></td>
-					<td>Криминальное чтиво</td>
-					<td>1994</td>
-					<td>8,9</td>
-					<td>Драма</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0000233/?ref_=tt_ov_dr">Quentin Tarantino</a></td>
+					<td id="urlPoster6"></td>
+					<td id="title6"></td>
+					<td id="year6"></td>
+					<td id="rating6"></td>
+					<td id="genres6"></td>
+					<td id="countries6"></td>
+					<td id="directors6"></td>
 					<td><a href="#" class="button7"/>Трейлер</a></td>
-					<td class="add_item" data-id="7"><a href="#" class="button27"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(6)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr >
-					<td><img src="./img/img8.jpg"></td>
-					<td>Властелин колец: Возвращение короля</td>
-					<td>2003</td>
-					<td>8,9</td>
-					<td>Фентези</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0001392/?ref_=tt_ov_dr">Peter Jackson</a></td>
+					<td id="urlPoster7"></td>
+					<td id="title7"></td>
+					<td id="year7"></td>
+					<td id="rating7"></td>
+					<td id="genres7"></td>
+					<td id="countries7"></td>
+					<td id="directors7"></td>
 					<td><a href="#" class="button8"/>Трейлер</a></td>
-					<td class="add_item" data-id="8"><a href="#" class="button28"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(7)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr class="even">
-					<td><img src="./img/img9.jpg"></td>
-					<td>Хороший, плохой, злой</td>
-					<td>1996</td>
-					<td>8,9</td>
-					<td>Вестерн</td>
-					<td>Италия</td>
-					<td><a href="http://www.imdb.com/name/nm0001466/?ref_=tt_ov_dr">Sergio Leone</a></td>
+					<td id="urlPoster8"></td>
+					<td id="title8"></td>
+					<td id="year8"></td>
+					<td id="rating8"></td>
+					<td id="genres8"></td>
+					<td id="countries8"></td>
+					<td id="directors8"></td>
 					<td><a href="#" class="button9"/>Трейлер</a></td>
-					<td class="add_item" data-id="9"><a href="#" class="button29"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(8)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr >
-					<td><img src="./img/img10.jpg"></td>
-					<td>Бойцовский клуб</td>
-					<td>1999</td>
-					<td>8,8</td>
-					<td>Драма</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0000399/?ref_=tt_ov_dr">David Fincher</a></td>
+					<td id="urlPoster9"></td>
+					<td id="title9"></td>
+					<td id="year9"></td>
+					<td id="rating9"></td>
+					<td id="genres9"></td>
+					<td id="countries9"></td>
+					<td id="directors9"></td>
 					<td><a href="#" class="button10"/>Трейлер</a></td>
-					<td class="add_item" data-id="10"><a href="#" class="button30"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(9)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr class="even">
-					<td><img src="./img/img11.jpg"></td>
-					<td>Властелин колец: Братство кольца</td>
-					<td>2001</td>
-					<td>8,8</td>
-					<td>Фентези</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0001392/?ref_=tt_ov_dr">Peter Jackson</a></td>
+					<td id="urlPoster10"></td>
+					<td id="title10"></td>
+					<td id="year10"></td>
+					<td id="rating10"></td>
+					<td id="genres10"></td>
+					<td id="countries10"></td>
+					<td id="directors10"></td>
 					<td><a href="#" class="button11"/>Трейлер</a></td>
-					<td class="add_item" data-id="11"><a href="#" class="button31"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(10)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr >
-					<td><img src="./img/img12.jpg"></td>
-					<td>Звёздные войны. Эпизод 5</td>
-					<td>1980</td>
-					<td>8,8</td>
-					<td>Фентези</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0449984/?ref_=tt_ov_dr">Irvin Kershner</a></td>
+					<td id="urlPoster11"></td>
+					<td id="title11"></td>
+					<td id="year11"></td>
+					<td id="rating11"></td>
+					<td id="genres11"></td>
+					<td id="countries11"></td>
+					<td id="directors11"></td>
 					<td><a href="#" class="button12"/>Трейлер</a></td>
-					<td class="add_item" data-id="12"><a href="#" class="button32"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(11)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr class="even">
-					<td><img src="./img/img13.jpg"></td>
-					<td>Форест Гамп</td>
-					<td>1994</td>
-					<td>8,7</td>
-					<td>Фентези</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0000709/?ref_=tt_ov_dr">Robert Zemeckis</a></td>
+					<td id="urlPoster12"></td>
+					<td id="title12"></td>
+					<td id="year12"></td>
+					<td id="rating12"></td>
+					<td id="genres12"></td>
+					<td id="countries12"></td>
+					<td id="directors12"></td>
 					<td><a href="#" class="button13"/>Трейлер</a></td>
-					<td class="add_item" data-id="13"><a href="#" class="button33"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(12)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr >
-					<td><img src="./img/img14.jpg"></td>
-					<td>Начало</td>
-					<td>2010</td>
-					<td>8,7</td>
-					<td>Фентези</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0634240/?ref_=tt_ov_dr">Christopher Nolan</a></td>
+					<td id="urlPoster13"></td>
+					<td id="title13"></td>
+					<td id="year13"></td>
+					<td id="rating13"></td>
+					<td id="genres13"></td>
+					<td id="countries13"></td>
+					<td id="directors13"></td>
 					<td><a href="#" class="button14"/>Трейлер</a></td>
-					<td class="add_item" data-id="14"><a href="#" class="button34"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(13)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr class="even">
-					<td><img src="./img/img15.jpg"></td>
-					<td>Властелин колец: Две крепости</td>
-					<td>2002</td>
-					<td>8,7</td>
-					<td>Фентези</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0001392/?ref_=tt_ov_dr">Peter Jackson</a></td>
+					<td id="urlPoster14"></td>
+					<td id="title14"></td>
+					<td id="year14"></td>
+					<td id="rating14"></td>
+					<td id="genres14"></td>
+					<td id="countries14"></td>
+					<td id="directors14"></td>
 					<td><a href="#" class="button15"/>Трейлер</a></td>
-					<td class="add_item" data-id="15"><a href="#" class="button35"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(14)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr >
-					<td><img src="./img/img16.jpg"></td>
-					<td>Пролетая над гнездом кукушки</td>
-					<td>1975</td>
-					<td>8,7</td>
-					<td>Драма</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0001232/?ref_=tt_ov_dr">Milos Forman</a></td>
+					<td id="urlPoster15"></td>
+					<td id="title15"></td>
+					<td id="year15"></td>
+					<td id="rating15"></td>
+					<td id="genres15"></td>
+					<td id="countries15"></td>
+					<td id="directors15"></td>
 					<td><a href="#" class="button16"/>Трейлер</a></td>
-					<td class="add_item" data-id="16"><a href="#" class="button36"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(15)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr class="even">
-					<td><img src="./img/img17.jpg"></td>
-					<td>Славные парни</td>
-					<td>1990</td>
-					<td>8,7</td>
-					<td>драма</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0000217/?ref_=tt_ov_dr">Martin Scorsese</a></td>
+					<td id="urlPoster16"></td>
+					<td id="title16"></td>
+					<td id="year16"></td>
+					<td id="rating16"></td>
+					<td id="genres16"></td>
+					<td id="countries16"></td>
+					<td id="directors16"></td>
 					<td><a href="#" class="button17"/>Трейлер</a></td>
-					<td class="add_item" data-id="17"><a href="#" class="button37"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(16)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr >
-					<td><img src="./img/img18.jpg"></td>
-					<td>Матрица</td>
-					<td>1999</td>
-					<td>8,7</td>
-					<td>Драма</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0905154/?ref_=tt_ov_dr">Lana Wachowski</a></td>
+					<td id="urlPoster17"></td>
+					<td id="title17"></td>
+					<td id="year17"></td>
+					<td id="rating17"></td>
+					<td id="genres17"></td>
+					<td id="countries17"></td>
+					<td id="directors17"></td>
 					<td><a href="#" class="button18"/>Трейлер</a></td>
-					<td class="add_item" data-id="18"><a href="#" class="button38"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(17)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr class="even">
-					<td><img src="./img/img19.jpg"></td>
-					<td>Семь самураев</td>
-					<td>1954</td>
-					<td>8,6</td>
-					<td>Драма</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0000041/?ref_=tt_ov_dr">Akira Kurosawa</a></td>
+					<td id="urlPoster18"></td>
+					<td id="title18"></td>
+					<td id="year18"></td>
+					<td id="rating18"></td>
+					<td id="genres18"></td>
+					<td id="countries18"></td>
+					<td id="directors18"></td>
 					<td><a href="#" class="button19"/>Трейлер</a></td>
-					<td class="add_item" data-id="19"><a href="#" class="button39"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(18)" class="button21"/>Избранное</a></td>
 				</tr>
 				<tr >
-					<td><img src="./img/img20.jpg"></td>
-					<td>Звёздные войны</td>
-					<td>1977</td>
-					<td>8,6</td>
-					<td>Фентези</td>
-					<td>США</td>
-					<td><a href="http://www.imdb.com/name/nm0000184/?ref_=tt_ov_dr">George Lucas</a></td>
+					<td id="urlPoster19"></td>
+					<td id="title19"></td>
+					<td id="year19"></td>
+					<td id="rating19"></td>
+					<td id="genres19"></td>
+					<td id="countries19"></td>
+					<td id="directors19"></td>
 					<td><a href="#" class="button20"/>Трейлер</a></td>
-					<td class="add_item" data-id="20"><a href="#" class="button40"/>Избранное</a></td>
+					<td><a href="#" onclick="myClick(19)" class="button21"/>Избранное</a></td>
 				</tr>
 			</table>
 		</div>
 
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="jquery.showYtVideo.js"></script>
-		<script>
-		 jQuery(document).ready(function ($) {
-		            $('.button1').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: '87Pxs5MSr_c'
-		                });
-		            });
-		            $('.button2').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'x1_HdUQ1Mz0'
-		                });
-		            });
-		            $('.button3').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'kryutKVnaGQ'
-		                });
-		            });
-		            $('.button4').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'fmBt4PXWzpM'
-		                });
-		            });
-		            $('.button5').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: '41081TXzuY0'
-		                });
-		            });
-		            $('.button6').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'jW0a8P-uNek'
-		                });
-		            });
-		            $('.button7').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'mq9d2S4iJS0'
-		                });
-		            });
-		            $('.button8').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'QVIt5n94LL0'
-		                });
-		            });
-		            $('.button9').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'AmIQ--cjntw'
-		                });
-		            });
-		            $('.button10').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'oqHJp_ZZdU4'
-		                });
-		            });
-		            $('.button11').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: '4BE5u9itrsY'
-		                });
-		            });
-		            $('.button12').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: '1bw8KFlEWpU'
-		                });
-		            });
-		            $('.button13').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'gB7wy6YGCGA'
-		                });
-		            });
-		            $('.button14').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: '85Zz1CCXyDI'
-		                });
-		            });
-		            $('.button15').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'HceZj-mOrMo'
-		                });
-		            });
-		            $('.button16').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'yMnXpoudToM'
-		                });
-		            });
-		            $('.button17').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'hA0Ht8S1KaU'
-		                });
-		            });
-		            $('.button18').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'ihTvN2iCnhA'
-		                });
-		            });
-		            $('.button19').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'PhSSUu9KnQo'
-		                });
-		            });
-		            $('.button20').on('click', function () {
-		                $.showYtVideo({
-		                    videoId: 'GBZK3fLZC4Q'
-		                });
-		            });
-		        });
-		</script>
-		<script type="text/javascript">
-
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-36251023-1']);
-		  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
 		<script src="./code.js"></script>
+		<script src="./getdata.js"></script>
 </body>
 </html>
